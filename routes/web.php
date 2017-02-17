@@ -13,6 +13,9 @@
 
 Route::get('/', function () {
     return view("welcome");
-});
+}); 
 Route::get('/calc','helloController@ggwp');
 Route::post('/calc','helloController@add');
+
+Route::get('/bla','blaController@mul');
+Route::post('/mul','blaController@dispmul');
